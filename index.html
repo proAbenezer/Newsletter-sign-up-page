@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter sign-up form with success message</title>
+    <link rel="stylesheet" href="./main/output.css" />
+  </head>
+  <body
+    class="md:bg-CharcoalGrey md:flex md:items-center md:justify-center md:h-screen"
+  >
+    <div
+      class="flex flex-col space-y-4 mb-6 md:flex-row-reverse md:container md:max-auto md:max-h-sm md:bg-white md:justify-center md:items-center"
+    >
+      <div class="w-full basis-1/2">
+        <img
+          src="./assets/images/illustration-sign-up-desktop.svg"
+          alt="sing up illustration"
+          class="w-full md:h-full"
+        />
+      </div>
+      <div class="flex flex-col space-y-4 basis-2 px-4">
+        <h1 class="font-robotoBold font-bold text-DarkSlateGrey text-4xl">
+          Stay updated!
+        </h1>
+        <p class="font-roboto text-DarkSlateGrey text-md">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="flex flex-col space-y-4">
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/icon-list.svg" class="pt-[1%]" alt="" />
+            <p class="font-robotoBold text-DarkSlateGrey text-md pt-0">
+              Product discovery and building what matters
+            </p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/icon-list.svg" class="pt-[1%]" alt="" />
+            <p class="font-robotoBold text-DarkSlateGrey text-md pt-0">
+              Measuring to ensure updates are a success
+            </p>
+          </div>
+          <div class="flex items-start gap-4">
+            <img src="./assets/images/icon-list.svg" class="pt-[1%]" alt="" />
+            <p class="font-robotoBold text-DarkSlateGrey text-md pt-0">
+              And much more!
+            </p>
+          </div>
+        </div>
+        <form class="flex flex-col items-start space-y-4" novalidate>
+          <div class="w-full flex flex-col space-y-2">
+            <label
+              for="email"
+              class="font-robotoBold font-bold text-xs text-DarkSlateGrey"
+            >
+              Email address
+            </label>
+            <input
+              type="email"
+              placeholder="email@company.com"
+              class="w-full font-roboto text-md text-Grey border-[1px] border-Grey rounded p-2 focus:outline-DarkSlateGrey focus:text-DarkSlateGrey"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full bg-DarkSlateGrey font-robotoBold font-bold text-center text-white text-sm py-3 rounded hover:bg-PrimaryTomato focus:bg-PrimaryTomato"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
