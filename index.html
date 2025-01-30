@@ -10,6 +10,7 @@
   <body class="flex justify-center h-screen md:items-center bg-CharcoalGrey">
     <div
       id="grid"
+      style="display: flex"
       class="flex flex-col overflow-hidden bg-white gap-6 md:rounded-xl md:h-[95%] xl:h-auto xl:rounded-xl xl:p-6 xl:flex-row-reverse xl:items-center"
     >
       <div
@@ -81,6 +82,35 @@
             Subscribe to monthly newsletter
           </button>
         </form>
+      </div>
+    </div>
+    <div
+      id="popup"
+      style="display: none"
+      class="w-full h-screen bg-white flex items-center justify-center md:bg-CharcoalGrey"
+    >
+      <div
+        class="bg-white max-w-sm mx-auto px-6 flex flex-col gap-4 rounded-xl md:h-sm md:w-sm md:p-6"
+      >
+        <img src="./assets/images/icon-list.svg" alt="" class="w-14 h-14" />
+        <h1 class="font-robotoBold font-[800] text-DarkSlateGrey text-4xl">
+          Thanks for subscribing!
+        </h1>
+        <p class="font-roboto text-DarkSlateGreys">
+          A confirmation email has been sent to
+          <span id="subscribered-email" class="font-robotoBold font-bold"
+            >ash@loremcompany.com.</span
+          >
+          Please open it and click the button inside to confirm your
+          subscription.
+        </p>
+
+        <button
+          id="dismiss-btn"
+          class="w-full py-3 bg-DarkSlateGrey font-robotoBold font-bold text-white rounded-lg mt-44 cursor-pointer md:mt-0"
+        >
+          Dismiss message
+        </button>
       </div>
     </div>
   </body>
