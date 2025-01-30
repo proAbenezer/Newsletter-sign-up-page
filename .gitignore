@@ -16,3 +16,5 @@
 .prettierignore
 node_modules
 design
+tailwind.config.js
+text.txt
